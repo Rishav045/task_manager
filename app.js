@@ -3,6 +3,7 @@ const express = require('express');
 const tasks = require('./routes/tasks.js')
 const connectDB = require('./db/connect.js')
 const cors = require('cors');
+const errorHandlerMiddleware= require('./middleware/errorHandler.js')
 // Remember this
 require('dotenv').config()
 
@@ -22,6 +23,7 @@ app.use('',(req,res)=>{
     // console.log('Page not found')
     res.send('Page not found')
 })
+app.use(errorHandlerMiddleware);
 
 const start = async () =>{
     try {
