@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "run app.js"
+    // "start": "run app.js"
   },
   "keywords": [],
   "author": "",
