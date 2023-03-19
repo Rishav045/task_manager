@@ -4,7 +4,7 @@ const tasks = require('./routes/tasks.js')
 const connectDB = require('./db/connect.js')
 const cors = require('cors');
 const errorHandlerMiddleware= require('./middleware/errorHandler.js')
-// Remember this
+// Remember this before you forget
 require('dotenv').config()
 
 const app = express();
